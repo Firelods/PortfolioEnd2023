@@ -1,0 +1,26 @@
+:root {
+  --title-card-project-font-family: "Rokkitt", serif;
+  --title-card-project-font-weight: 400;
+  --title-card-project-font-size: 48px;
+  --title-card-project-letter-spacing: 0px;
+  --title-card-project-line-height: normal;
+  --title-card-project-font-style: normal;
+  --text-labels-card-project-font-family: "Work Sans", sans-serif;
+  --text-labels-card-project-font-weight: 400;
+  --text-labels-card-project-font-size: 16px;
+  --text-labels-card-project-letter-spacing: 0px;
+  --text-labels-card-project-line-height: normal;
+  --text-labels-card-project-font-style: normal;
+  --font-head-title-font-family: "Roboto Mono", monospace;
+  --font-head-title-font-weight: 400;
+  --font-head-title-font-size: 20px;
+  --font-head-title-letter-spacing: 0px;
+  --font-head-title-line-height: normal;
+  --font-head-title-font-style: normal;
+  --paragraphes-font-family: "Jost", sans-serif;
+  --paragraphes-font-weight: 400;
+  --paragraphes-font-size: 14px;
+  --paragraphes-letter-spacing: 0px;
+  --paragraphes-line-height: normal;
+  --paragraphes-font-style: normal;
+}

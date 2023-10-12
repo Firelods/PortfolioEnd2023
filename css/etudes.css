@@ -1,0 +1,57 @@
+.schoolParcours {
+  height: 300px;
+  margin-top: 30%;
+}
+.pictoTimeline {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+
+  width: 60px;
+  height: 60px;
+
+  box-shadow: 0px 0px 0px 4px #e3e3e3, 0px 3px 0px 4px rgba(0, 0, 0, 0.05),
+    inset 0px 2px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+#polytech {
+  background: #75cd65;
+}
+#thalesAleniaSpace {
+  background: #6588cd;
+}
+#butInfo {
+  background: #cda365;
+}
+.pictoTimeline img {
+  width: 40px;
+  height: 40px;
+}
+.desc {
+  background-color: #f3f3f3;
+  padding: 1em;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+}
+h2 {
+  font-weight: bold;
+}
+button {
+  /* Auto layout */
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15.5px 10px 15px;
+  background: #d3d3d4;
+  box-shadow: 0px 4px 4px rgba(28, 28, 33, 0.15);
+  border-radius: 4px;
+  border: none;
+  float: right;
+}

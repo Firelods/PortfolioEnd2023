@@ -1,57 +1,127 @@
 .schoolParcours {
-  height: 300px;
-  margin-top: 30%;
+    height: 300px;
+    margin-top: 30%;
 }
 .pictoTimeline {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
 
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 
-  box-shadow: 0px 0px 0px 4px #e3e3e3, 0px 3px 0px 4px rgba(0, 0, 0, 0.05),
-    inset 0px 2px 0px rgba(0, 0, 0, 0.08);
-  border-radius: 30px;
+    box-shadow: 0px 0px 0px 4px #e3e3e3, 0px 3px 0px 4px rgba(0, 0, 0, 0.05),
+        inset 0px 2px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
 }
 #polytech {
-  background: #75cd65;
+    background: #75cd65;
 }
 #thalesAleniaSpace {
-  background: #6588cd;
+    background: #6588cd;
 }
 #butInfo {
-  background: #cda365;
+    background: #cda365;
 }
 .pictoTimeline img {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 .desc {
-  background-color: #f3f3f3;
-  padding: 1em;
-  height: 175px;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8em;
+    background-color: #f3f3f3;
+    padding: 1em;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
 }
 h2 {
-  font-weight: bold;
+    font-weight: bold;
 }
 button {
-  /* Auto layout */
-  display: flex;
-  width: fit-content;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15.5px 10px 15px;
-  background: #d3d3d4;
-  box-shadow: 0px 4px 4px rgba(28, 28, 33, 0.15);
-  border-radius: 4px;
-  border: none;
-  float: right;
+    /* Auto layout */
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15.5px 10px 15px;
+    background: #d3d3d4;
+    box-shadow: 0px 4px 4px rgba(28, 28, 33, 0.15);
+    border-radius: 4px;
+    border: none;
+    float: right;
+}
+
+.schoolParcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schoolParcours > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as per space needed between blocks */
+}
+
+.pictoTimeline {
+    /* Your existing styles */
+    /* Add more if needed for alignment */
+}
+
+.pictoTimeline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Half of the space between the blocks */
+    transform: translateX(-50%);
+    width: 4px;
+    height: 30px; /* Adjust as per space needed between blocks */
+    background: #e3e3e3;
+}
+
+/* To not show line below the last picto */
+.schoolParcours > div:last-child .pictoTimeline::after {
+    display: none;
+}
+
+.desc {
+    /* Your existing styles */
+    position: absolute;
+    top: 80px; /* Adjust as per your layout */
+    width: 250px; /* Adjust as per your layout */
+    transform: translateX(-50%);
+    left: 50%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* Style for h2 and h3 */
+h2,
+h3 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+button {
+    /* Your existing styles */
+    margin-top: auto; /* Push it to the bottom */
+}
+
+/* To position the 'En savoir plus' to the right inside .desc */
+.desc > button {
+    align-self: flex-end;
+}
+
+/* Responsive adjustments if needed */
+@media screen and (max-width: 768px) {
+    .desc {
+        /* Adjust styles for mobile view */
+    }
 }

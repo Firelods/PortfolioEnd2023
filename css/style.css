@@ -16,43 +16,39 @@ body {
     align-items: center;
     padding-left: 5%;
     background-color: #ffffff;
+    z-index: 999;
 }
 .link {
     color: #8b8b8b;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     line-height: normal;
 }
 
-.projets-dropdown {
-    position: fixed;
-    top: 2%;
-    right: 5%;
-    height: 43px;
-    background-color: #e9e9e9;
-    border-radius: 10px;
-    transition: all 0.1s ease-in-out;
+.projets-list {
+    display: flex;
+    gap: 1em;
+    font-family: "Rokkitt", Helvetica;
+    font-weight: 500;
 }
 
 .projets {
     display: flex;
     height: 45px;
     align-items: center;
+    background-color: #e9e9e9;
+    border-radius: 10px;
     justify-content: center;
     padding: 0px 5px;
+    gap: 5%;
     position: relative;
 }
-.projets:not(.active) .expand-arrow {
-    display: none;
-}
-.projets:not(.active) {
-    visibility: hidden;
-}
-.opened {
-    height: calc(45px * 2);
-}
-.opened .projets:not(.active) {
-    animation: toVisible 0.2s ease-in-out forwards;
+.projets.active {
+    border: #000000 2px solid;
 }
 @keyframes toVisible {
     0% {
@@ -99,6 +95,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10%;
+}
+.title-and-desc p {
+    transition: max-height 0.3s ease-in-out;
+    clip-path: border-box;
+    max-height: 30%;
+}
+.title-and-desc.transi p:not(.posteName) {
+    max-height: 0px;
 }
 
 .title-and-desc span {
@@ -179,8 +183,12 @@ body {
 .image {
     width: 90%;
     object-fit: cover;
+    max-height: 40vh;
+    mix-blend-mode: darken;
 }
-
+#mydacia {
+    width: 70%;
+}
 .titleProject {
     font-family: "Rokkitt", Helvetica;
     font-weight: 400;
@@ -195,33 +203,41 @@ body {
 .listeTechs {
     display: flex;
     width: 100%;
-    align-items: flex-start;
-    gap: 24px;
-    overflow-x: scroll;
+    gap: 20px;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#angular {
+.angular {
     --color-tech: #c80202;
 }
-#nodeJS {
+.nodeJS {
     --color-tech: #437b33;
 }
-#html {
+.html {
     --color-tech: #c84902;
 }
-#css {
+.css {
     --color-tech: #34777b;
 }
-#javascript {
+.javascript {
     --color-tech: #908413;
 }
-#mongodb {
+.mongodb {
     --color-tech: #69c74f;
-    --background-color-tech: #000000c4;
+}
+.python {
+    --color-tech: #316994;
+}
+.sqllite {
+    --color-tech: #55ade1;
 }
 .tech {
-    --background-color-tech: #a6a6a696;
+    --background-color-tech: #ffffffc2;
     display: flex;
     width: 40%;
+    max-width: 150px;
     height: 31px;
     padding: 0 0.5em;
     align-items: center;
@@ -279,6 +295,13 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
+    .ellipse {
+        display: none;
+    }
+    .header {
+        padding: 0;
+        justify-content: space-evenly;
+    }
 }
 
 @media (min-width: 768px) {
@@ -305,13 +328,13 @@ footer img {
     .containerProject {
         flex: 4;
         overflow: auto;
-        height: 73vh;
+        height: 75vh;
     }
     .header {
         position: relative;
         padding: 1em;
         padding-left: 2em;
-        gap: 30%;
+        gap: 20%;
         z-index: 1;
         border-radius: 2em;
         height: 8%;
@@ -326,6 +349,7 @@ footer img {
     }
     .projets {
         justify-content: space-evenly;
+        gap: 1em;
     }
     .project {
         min-height: 600px;

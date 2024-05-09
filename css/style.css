@@ -27,6 +27,7 @@ body {
     font-weight: 500;
     font-style: normal;
     line-height: normal;
+    cursor: pointer;
 }
 
 .projets-list {
@@ -46,6 +47,7 @@ body {
     padding: 0px 5px;
     gap: 5%;
     position: relative;
+    cursor: pointer;
 }
 .projets.active {
     border: #000000 2px solid;

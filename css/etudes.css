@@ -140,6 +140,22 @@ button {
     margin: 0;
     padding: 0;
 }
+.timeline-content span.span {
+    float: left;
+    text-align: left;
+    font-family: "Jost", sans-serif;
+    width: 100%;
+    display: none;
+}
+.timeline-item.active .span {
+    display: block;
+}
+.timeline-item button svg {
+    transition: transform 0.3s;
+}
+.timeline-item.active button svg {
+    transform: rotate(180deg);
+}
 
 .timeline-content button {
     margin-top: 10px;
@@ -185,24 +201,34 @@ button {
     .desc {
         /* Adjust styles for mobile view */
     }
+    .mobile-hide {
+        display: none;
+    }
     .timeline {
         padding: 0;
     }
     .timeline:before {
-        left: 90%;
+        left: 98%;
     }
     .timeline-icon {
-        left: 90%;
+        left: 98%;
     }
     .timeline .timeline-item .timeline-content {
         float: left;
         text-align: right;
-        width: 80%;
+        width: 85%;
     }
+
     .timeline h2 {
         font-size: 1.4em;
     }
     .timeline h3 {
         font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .timeline .timeline-item .timeline-content svg {
+        display: none;
     }
 }

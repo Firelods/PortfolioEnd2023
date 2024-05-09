@@ -23,9 +23,24 @@
     mix-blend-mode: darken;
     width: 70%;
 }
-
+#tsn-group button {
+    background: #242a76;
+    color: white;
+}
+#polytech-group button {
+    background: #009ee0;
+    color: white;
+}
+#tas button {
+    background: #6588cd;
+    color: white;
+}
 #tsn {
     background: #242a76;
+}
+#but button {
+    background: #75cd65;
+    color: white;
 }
 #tsn img {
     padding-bottom: 10%;
@@ -152,6 +167,7 @@ button {
 }
 .timeline-item button svg {
     transition: transform 0.3s;
+    fill: white;
 }
 .timeline-item.active button svg {
     transform: rotate(180deg);
@@ -162,7 +178,7 @@ button {
     padding: 5px 10px;
     background-color: #e0e4ed;
     border: none;
-    border-radius: 5px;
+    border-radius: 17px;
     cursor: pointer;
     font-size: 14px;
 }

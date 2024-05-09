@@ -183,7 +183,6 @@ body {
 .image {
     width: 90%;
     object-fit: cover;
-    max-height: 40vh;
     mix-blend-mode: darken;
 }
 #mydacia {

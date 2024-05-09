@@ -20,7 +20,7 @@ body {
 }
 .link {
     color: #8b8b8b;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -97,7 +97,8 @@ body {
     padding-bottom: 10%;
 }
 .title-and-desc p {
-    transition: max-height 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     clip-path: border-box;
     max-height: 30%;
 }
@@ -188,7 +189,7 @@ body {
     font-family: "Rokkitt", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -279,6 +280,7 @@ footer img {
 .body {
     display: flex;
     padding: 1em;
+    scroll-behavior: smooth;
     gap: 1em;
 }
 

@@ -28,7 +28,8 @@ function transitionPolytech() {
     }, 300);
     setTimeout(() => {
         titleAndDesc.classList.remove("transi");
-    }, 500);
+    }, 1000);
+    scrollTo(0, 0);
 }
 
 const textForTSN = [
@@ -48,7 +49,8 @@ function transitionTSN() {
     }, 300);
     setTimeout(() => {
         titleAndDesc.classList.remove("transi");
-    }, 500);
+    }, 1000);
+    scrollTo(0, 0);
 }
 
 const textForTAS = [
@@ -68,5 +70,6 @@ function transitionTAS() {
     }, 300);
     setTimeout(() => {
         titleAndDesc.classList.remove("transi");
-    }, 500);
+    }, 1000);
+    scrollTo(0, 0);
 }

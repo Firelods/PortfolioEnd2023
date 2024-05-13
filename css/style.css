@@ -300,8 +300,11 @@ footer img {
         display: none;
     }
     .header {
-        padding: 0;
+        padding: 0px 2%;
         justify-content: space-evenly;
+    }
+    .projets span {
+        font-size: 14px;
     }
 }
 

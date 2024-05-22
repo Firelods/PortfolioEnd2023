@@ -1,0 +1,44 @@
+{
+    "portfolio_title": "Clément LEFEVRE Portfolio",
+    "name": "Clément LEFEVRE",
+    "job_title": {
+        "value": "Ingénieur Développeur Full Stack en alternance",
+        "styles": {}
+    },
+    "student_polytech": {
+        "value": "<span class='span'>Etudiant à </span><span class='bold'>Polytech Nice Sophia</span> <span class='span'>en cycle d’ingénieur informatique, je suis spécialisé dans la programmation et le développement Web.</span>",
+        "styles": {}
+    },
+    "internship_thales": {
+        "value": "<span class='span'>En Alternance à </span><span class='bold'>Thales Services Numériques</span><span class='span'>, je suis en charge du développement Full-Stack de diverses applications.</span>",
+        "styles": {}
+    },
+    "aviation_passion": {
+        "value": "<span class='span'>Passionné d’aviation, je suis </span><span class='bold'>pilote de planeur</span><span class='span'> et réalise également des vols en </span><span class='bold'>drone FPV et stabilisé.</span>",
+        "styles": {}
+    },
+    "project_title_1": "MyDaciaEnhanced",
+    "project_title_2": "$hare",
+    "project_title_3": "Portfolio 2023",
+    "tech_python": "Python",
+    "tech_sqlite": "SQLite",
+    "tech_angular": "Angular",
+    "tech_nodejs": "NodeJS",
+    "tech_mongodb": "MongoDB",
+    "tech_html": "HTML",
+    "tech_css": "CSS",
+    "tech_js": "JS",
+    "footer_name": "Clément LEFEVRE",
+    "master-degree": "Diplôme d'ingénieur en informatique",
+    "know-more": "En savoir plus",
+    "polytech-currently-studying": "Je prépare actuellement le diplôme d'ingénieur en informatique dans lequel nous apprenons les fondements de l'algorithmique, du développement logiciel, de l'intelligence artificielle, de la cybersécurité, des réseaux et systèmes, et des bases de données.",
+    "polytech-skills-learned": "Cette formation m'apporte des compétences techniques pointues en développement logiciel, en gestion de projets et en intelligence artificielle, ainsi qu'une solide expérience pratique grâce à mon alternance chez Thales Services Numériques.",
+    "fullstack-engineer": "Ingénieur Full Stack en Alternance",
+    "tsn-alternance": "Je suis actuellement en alternance chez Thales Services Numériques en tant qu'apprenti ingénieur Full Stack.",
+    "tsn-missions": "Je travaille sur des projets de développement web et de cybersécurité pour des clients internationaux.",
+    "web-dev-internship": "Stagiaire Développeur Web",
+    "april-to-august": "Avril 2023 - Août 2023",
+    "tas-missions": "J'ai été en charge du développement de plusieurs applications au sein du département Data et amélioration continue, notamment une application mobile destinée aux opérateurs des salles blanches.",
+    "tas-learned": "Cela m'a permis d'approfondir mes connaissances en développement mobile et d'en apprendre plus sur le domaine de la Data.",
+    "but": "BUT Informatique - Programmation et Algorithmique"
+}

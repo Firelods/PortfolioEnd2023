@@ -1,0 +1,44 @@
+{
+    "portfolio_title": "Clément LEFEVRE Portfolio",
+    "name": "Clément LEFEVRE",
+    "job_title": {
+        "value": "Full Stack Developer Engineer Apprentice",
+        "styles": {}
+    },
+    "student_polytech": {
+        "value": "<span class='span'>Student at </span><span class='bold'>Polytech Nice Sophia</span><span class='span'> in the computer engineering program, specializing in programming and web development.</span>",
+        "styles": {}
+    },
+    "internship_thales": {
+        "value": "<span class='span'>Apprentice at </span><span class='bold'>Thales Services Numériques</span><span class='span'>, responsible for Full-Stack development of various applications.</span>",
+        "styles": {}
+    },
+    "aviation_passion": {
+        "value": "<span class='span'>Passionate about aviation, I am a </span><span class='bold'>glider pilot</span><span class='span'> and also conduct flights with </span><span class='bold'>FPV and stabilized drones.</span>",
+        "styles": {}
+    },
+    "project_title_1": "MyDaciaEnhanced",
+    "project_title_2": "$hare",
+    "project_title_3": "Portfolio 2023",
+    "tech_python": "Python",
+    "tech_sqlite": "SQLite",
+    "tech_angular": "Angular",
+    "tech_nodejs": "NodeJS",
+    "tech_mongodb": "MongoDB",
+    "tech_html": "HTML",
+    "tech_css": "CSS",
+    "tech_js": "JS",
+    "footer_name": "Clément LEFEVRE",
+    "master-degree": "Master's degree in computer engineering",
+    "know-more": "Learn more",
+    "polytech-currently-studying": "I am currently pursuing a Master's degree in computer engineering, where we learn the fundamentals of algorithms, software development, artificial intelligence, cybersecurity, networks and systems, and databases.",
+    "polytech-skills-learned": "This program provides me with advanced technical skills in software development, project management, and artificial intelligence, as well as practical experience through my apprenticeship at Thales Services Numériques.",
+    "fullstack-engineer": "Full Stack Engineer Apprentice",
+    "tsn-alternance": "I am currently an apprentice Full Stack Engineer at Thales Services Numériques.",
+    "tsn-missions": "I work on web development and cybersecurity projects for international clients.",
+    "web-dev-internship": "Web Developer Intern",
+    "april-to-august": "April 2023 - August 2023",
+    "tas-missions": "I was responsible for developing several applications within the Data and Continuous Improvement department, including a mobile application for cleanroom operators.",
+    "tas-learned": "This allowed me to deepen my knowledge in mobile development and learn more about the Data field.",
+    "but": "BUT in Computer Science - Programming and Algorithms"
+}

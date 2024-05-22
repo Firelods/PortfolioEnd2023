@@ -66,18 +66,54 @@
                         <span>Formation</span>
                     </div>
                 </div>
+                <div id="language-buttons">
+                    <button id="FR" onclick="changeLanguage('fr')">
+                        FR
+                        <img
+                            class="flag"
+                            src="./img/Flag_of_France.svg"
+                            alt="French flag"
+                        />
+                    </button>
+                    <button id="EN" onclick="changeLanguage('en')">
+                        EN
+                        <img
+                            class="flag"
+                            src="./img/Flag_of_the_United_States.svg"
+                            alt="French flag"
+                        />
+                    </button>
+                </div>
             </header>
 
             <div class="body">
+                <div id="language-buttons-mobile">
+                    <button id="FR-mobile" onclick="changeLanguage('fr')">
+                        FR
+                        <img
+                            class="flag"
+                            src="./img/Flag_of_France.svg"
+                            alt="French flag"
+                        />
+                    </button>
+                    <button id="EN-mobile" onclick="changeLanguage('en')">
+                        EN
+                        <img
+                            class="flag"
+                            src="./img/Flag_of_the_United_States.svg"
+                            alt="French flag"
+                        />
+                    </button>
+                </div>
                 <div class="title-and-desc">
-                    <div class="titleName">Clément LEFEVRE</div>
+                    <div class="titleName" data-key="name">Clément LEFEVRE</div>
                     <p class="posteName">
-                        <span class="italic"
+                        <span class="italic" data-key="job_title"
                             >Ingénieur Développeur Full Stack en
                             alternance</span
                         >
                     </p>
-                    <p class="etudiant-polytech">
+                    <p class="etudiant-polytech" data-key="student_polytech">
                         <span class="span">Etudiant à </span>
                         <span class="bold">Polytech Nice Sophia</span>
                         <span class="span">
@@ -87,8 +123,10 @@
                         >
                     </p>
                     <div class="circle"></div>
-
-                    <p class="en-alternance-thales">
+                    <p
+                        class="en-alternance-thales"
+                        data-key="internship_thales"
+                    >
                         <span class="span">En Alternance à </span>
                         <span class="bold">Thales Services Numériques</span>
                         <span class="span"
@@ -101,8 +139,7 @@
                         <div class="circle"></div>
                         <div class="circle"></div>
                     </div>
-
-                    <p class="passionn-d-aviation">
+                    <p class="passionn-d-aviation" data-key="aviation_passion">
                         <span class="span">Passionné d’aviation, je suis </span>
                         <span class="bold">pilote de planeur</span>
                         <span class="span">
@@ -140,9 +177,13 @@
                         </div>
                         <div class="timeline-content">
                             <h2>Polytech Nice Sophia</h2>
-                            <h3>Diplome d'ingénieur informatique</h3>
+                            <h3 data-key="master-degree">
+                                Diplome d'ingénieur informatique
+                            </h3>
                             <button onclick="transitionPolytech()">
-                                <span class="mobile-hide">En savoir plus</span>
+                                <span class="mobile-hide" data-key="know-more"
+                                    >En savoir plus</span
+                                >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24px"
@@ -155,8 +196,10 @@
                                     />
                                 </svg>
                             </button>
-                            <span class="span">2023 - 2026 </span>
-                            <span class="span"
+                            <span class="span">2023 - 2026</span>
+                            <span
+                                class="span"
+                                data-key="polytech-currently-studying"
                                 >Je prépare actuellement le diplôme d'ingénieur
                                 en informatique dans lequel nous apprenons les
                                 fondements de l'algorithmique, du développement
@@ -164,7 +207,9 @@
                                 cybersécurité, des réseaux et systèmes, et des
                                 bases de données.</span
                             >
-                            <span class="span"
+                            <span
+                                class="span"
+                                data-key="polytech-skills-learned"
                                 >Cette formation m'apporte des compétences
                                 techniques pointues en développement logiciel,
                                 en gestion de projets et en intelligence
@@ -180,9 +225,13 @@
                         </div>
                         <div class="timeline-content">
                             <h2>Thales Services Numériques</h2>
-                            <h3>Ingénieur Full Stack en Alternance</h3>
+                            <h3 data-key="fullstack-engineer">
+                                Ingénieur Full Stack en Alternance
+                            </h3>
                             <button onclick="transitionTSN()">
-                                <span class="mobile-hide">En savoir plus</span>
+                                <span class="mobile-hide" data-key="know-more"
+                                    >En savoir plus</span
+                                >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24px"
@@ -196,12 +245,12 @@
                                 </svg>
                             </button>
                             <span class="span">2023 - 2026</span>
-                            <span class="span"
+                            <span class="span" data-key="tsn-alternance"
                                 >Je suis actuellement en alternance chez Thales
                                 Services Numériques en tant qu'apprenti
                                 ingénieur Full Stack</span
                             >
-                            <span class="span"
+                            <span class="span" data-key="tsn-missions"
                                 >Je travaille sur des projets de développement
                                 web, de cybersécurité pour des clients
                                 internationaux</span
@@ -218,9 +267,13 @@
                         </div>
                         <div class="timeline-content">
                             <h2>Thales Alenia Space</h2>
-                            <h3>Stagiaire Développeur Web</h3>
+                            <h3 data-key="web-dev-internship">
+                                Stagiaire Développeur Web
+                            </h3>
                             <button onclick="transitionTAS()">
-                                <span class="mobile-hide">En savoir plus</span>
+                                <span class="mobile-hide" data-key="know-more"
+                                    >En savoir plus</span
+                                >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24px"
@@ -233,15 +286,17 @@
                                     />
                                 </svg>
                             </button>
-                            <span class="span">Avril 2023 - Août 2023</span>
-                            <span class="span"
+                            <span class="span" data-key="april-to-august"
+                                >Avril 2023 - Août 2023</span
+                            >
+                            <span class="span" data-key="tas-missions"
                                 >J'ai été en charge du développement de
                                 plusieurs applications au sein du département
                                 Data et amélioration continue, notamment une
                                 application mobile destinées aux opérateurs des
                                 salles blanches</span
                             >
-                            <span class="span"
+                            <span class="span" data-key="tas-learned"
                                 >Cela m'a donc permis d'approfondir mes
                                 connaissances en développement mobile et d'en
                                 apprendre plus sur le milieu de la Data</span
@@ -254,12 +309,14 @@
                         </div>
                         <div class="timeline-content">
                             <h2>IUT Nice Côte d'Azur</h2>
-                            <h3>
+                            <h3 data-key="but">
                                 BUT Informatique - Programmation et
                                 Algorithmique
                             </h3>
                             <button>
-                                <span class="mobile-hide">En savoir plus</span>
+                                <span class="mobile-hide" data-key="know-more"
+                                    >En savoir plus</span
+                                >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24px"
@@ -289,4 +346,5 @@
         </div>
     </body>
     <script src="./js/script.js"></script>
+    <script src="./js/i18n.js"></script>
 </html>
